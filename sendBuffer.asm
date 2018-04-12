@@ -45,23 +45,9 @@ sendBufferAsm:
     subs r5, #1         ; r5--       C10
     bcc .stop           ; if (r5<0) goto .stop  C11
 .start:
-    movs r6, #0x80      ; reset mask C12
+    movs r6, #0xF0      ; reset mask C12
     nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
-    nop                 ;            C13
-    nop
+
 
 .common:               ;             C13
     str r1, [r2, #0]   ; pin := lo   C15
