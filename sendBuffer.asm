@@ -34,6 +34,37 @@ sendBufferAsm:
 .nextbit:               ;            C0
     str r1, [r3, #0]    ; pin := hi  C2
     tst r6, r0          ;            C3
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
     bne .islate         ;            C4
     str r1, [r2, #0]    ; pin := lo  C6
 .islate:
@@ -45,7 +76,7 @@ sendBufferAsm:
     subs r5, #1         ; r5--       C10
     bcc .stop           ; if (r5<0) goto .stop  C11
 .start:
-    movs r6, #0xF0      ; reset mask C12
+    movs r6, #0x80      ; reset mask C12
     nop                 ;            C13
 
 
