@@ -48,6 +48,20 @@ sendBufferAsm:
     movs r6, #0x80      ; reset mask C12
     nop                 ;            C13
     nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
+    nop                 ;            C13
+    nop
 
 .common:               ;             C13
     str r1, [r2, #0]   ; pin := lo   C15
