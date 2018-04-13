@@ -34,7 +34,31 @@ sendBufferAsm:
 .nextbit:               ;            C0
     str r1, [r3, #0]    ; pin := hi  C2
     tst r6, r0          ;            C3
- 
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
     bne .islate         ;            C4
     str r1, [r2, #0]    ; pin := lo  C6
 .islate:
