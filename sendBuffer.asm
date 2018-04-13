@@ -36,34 +36,12 @@ sendBufferAsm:
     tst r6, r0          ;            C3
     nop
     nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
-    nop
+
     bne .islate         ;            C4
     str r1, [r2, #0]    ; pin := lo  C6
 .islate:
     lsrs r6, r6, #1     ; r6 >>= 1   C7
-    bne .justbit        ;            C8
+    bne .common         ;            C8
     
     ; not just a bit - need new byte
     adds r4, #1         ; r4++       C9
