@@ -37,6 +37,7 @@ sendBufferAsm:
     nop
     nop
     nop
+    nop
     bne .islate         ;            C4
     str r1, [r2, #0]    ; pin := lo  C6
 .islate:
